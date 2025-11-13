@@ -230,7 +230,7 @@ void main() {
                       content: {
                         'redacts': 'hand_raise_to_redact',
                         'device_id': 'device123',
-                        'redacts_type': 'com.famedly.call.member.reaction',
+                        'redacts_type': 'org.matrix.msc3401.call.member.reaction',
                         'call_id': 'test_call_redaction',
                         'reason': 'Hand lowered',
                       },

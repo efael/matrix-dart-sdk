@@ -100,7 +100,7 @@ abstract class EventTypes {
   static const String SpaceChild = 'm.space.child';
 
   // MatrixRTC
-  static const String GroupCallMember = 'com.famedly.call.member';
+  static const String GroupCallMember = 'org.matrix.msc3401.call.member';
   static const String GroupCallMemberEncryptionKeys =
       '$GroupCallMember.encryption_keys';
   static const String GroupCallMemberEncryptionKeysRequest =
@@ -118,5 +118,5 @@ abstract class EventTypes {
   static const String GroupCallMemberReplaces = '$GroupCallMember.replaces';
   static const String GroupCallMemberAssertedIdentity =
       '$GroupCallMember.asserted_identity';
-  static const GroupCallMemberReaction = 'com.famedly.call.member.reaction';
+  static const GroupCallMemberReaction = 'org.matrix.msc3401.call.member.reaction';
 }

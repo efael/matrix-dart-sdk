@@ -20,9 +20,9 @@ Places where we diverted from spec afaik:
 
 ## Group Calls
 
-All communication for group calls happens over to-device events except the `com.famedly.call.member` event.
+All communication for group calls happens over to-device events except the `org.matrix.msc3401.call.member` event.
 
-Sends the `com.famedly.call.member` event to signal an active membership. The format has to be the following:
+Sends the `org.matrix.msc3401.call.member` event to signal an active membership. The format has to be the following:
 
 ### Events -
 
@@ -75,8 +75,8 @@ Sends the `com.famedly.call.member` event to signal an active membership. The fo
 
 When in SFU/Livekit mode, the sdk can handle sending and requesting encryption keys. Currently it uses the following events: 
 
-- sending: `com.famedly.call.encryption_keys`
-- requesting: `com.famedly.call.encryption_keys.request`
+- sending: `org.matrix.msc3401.call.encryption_keys`
+- requesting: `org.matrix.msc3401.call.encryption_keys.request`
 
 You need to implement `EncryptionKeyProvider` and set the override the methods to interact with your actual keyProvider. The main one as of now is `onSetEncryptionKey`.
 

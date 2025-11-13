@@ -106,7 +106,7 @@ class VoIP {
       await _handleCallEvents(events);
     });
 
-    // handles the com.famedly.call events.
+    // handles the org.matrix.msc3401.call events.
     client.onRoomState.stream.listen(
       (update) async {
         final event = update.state;

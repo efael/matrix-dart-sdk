@@ -211,11 +211,11 @@ class FakeMatrixApi extends BaseClient {
         res = {'event_id': '\$event${_eventCounter++}'};
       } else if (method == 'PUT' &&
           action.contains('/client/v3/rooms/') &&
-          action.contains('/state/com.famedly.call.member/')) {
+          action.contains('/state/org.matrix.msc3401.call.member/')) {
         res = {'event_id': '\$event${_eventCounter++}'};
       } else if (method == 'PUT' &&
           action.contains('/client/v3/rooms/') &&
-          action.contains('/send/com.famedly.call.member.reaction/')) {
+          action.contains('/send/org.matrix.msc3401.call.member.reaction/')) {
         res = {'event_id': '\$event${_eventCounter++}'};
       } else if (method == 'PUT' &&
           action.contains('/client/v3/rooms/') &&
@@ -1774,7 +1774,7 @@ class FakeMatrixApi extends BaseClient {
             'origin_server_ts': 1432735824653,
             'unsigned': {'age': 1234},
           },
-      '/client/v3/rooms/!localpart%3Aserver.abc/messages?dir=b&limit=1&filter=%7B%22types%22%3A%5B%22m.room.message%22%2C%22m.room.encrypted%22%2C%22m.sticker%22%2C%22m.call.invite%22%2C%22m.call.answer%22%2C%22m.call.reject%22%2C%22m.call.hangup%22%2C%22com.famedly.call.member%22%5D%7D':
+      '/client/v3/rooms/!localpart%3Aserver.abc/messages?dir=b&limit=1&filter=%7B%22types%22%3A%5B%22m.room.message%22%2C%22m.room.encrypted%22%2C%22m.sticker%22%2C%22m.call.invite%22%2C%22m.call.answer%22%2C%22m.call.reject%22%2C%22m.call.hangup%22%2C%22org.matrix.msc3401.call.member%22%5D%7D':
           (var req) => {
                 'start': 't47429-4392820_219380_26003_2265',
                 'end': 't47409-4357353_219380_26003_2265',
@@ -2769,11 +2769,11 @@ class FakeMatrixApi extends BaseClient {
           (var reqI) => {
                 'event_id': '42',
               },
-      '/client/v3/rooms/!calls%3Aexample.com/state/com.famedly.call.member/%40test%3AfakeServer.notExisting':
+      '/client/v3/rooms/!calls%3Aexample.com/state/org.matrix.msc3401.call.member/%40test%3AfakeServer.notExisting':
           (var reqI) => {
                 'event_id': 'call_member_42',
               },
-      '/client/v3/rooms/!calls%3Aexample.com/state/com.famedly.call.member/%40remoteuser%3Aexample.com':
+      '/client/v3/rooms/!calls%3Aexample.com/state/org.matrix.msc3401.call.member/%40remoteuser%3Aexample.com':
           (var reqI) => {
                 'event_id': 'call_member_remote_42',
               },

@@ -1375,7 +1375,7 @@ void main() {
           'name': 'Testgroup',
           'power_level_content_override': {
             'events_default': 12,
-            'events': {'com.famedly.call.member': 12},
+            'events': {'org.matrix.msc3401.call.member': 12},
           },
           'preset': 'private_chat',
         },
@@ -1387,7 +1387,7 @@ void main() {
         groupCall: true,
         powerLevelContentOverride: {
           'events_default': 12,
-          'events': {'com.famedly.call.member': 14},
+          'events': {'org.matrix.msc3401.call.member': 14},
         },
       );
 
@@ -1405,7 +1405,7 @@ void main() {
           'name': 'Testgroup',
           'power_level_content_override': {
             'events_default': 12,
-            'events': {'com.famedly.call.member': 14},
+            'events': {'org.matrix.msc3401.call.member': 14},
           },
           'preset': 'private_chat',
         },
@@ -1430,7 +1430,7 @@ void main() {
           ],
           'name': 'Testgroup',
           'power_level_content_override': {
-            'events': {'com.famedly.call.member': 0},
+            'events': {'org.matrix.msc3401.call.member': 0},
           },
           'preset': 'private_chat',
         },
