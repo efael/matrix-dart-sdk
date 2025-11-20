@@ -119,4 +119,19 @@ abstract class EventTypes {
   static const String GroupCallMemberAssertedIdentity =
       '$GroupCallMember.asserted_identity';
   static const GroupCallMemberReaction = 'com.famedly.call.member.reaction';
+
+  // Standard MatrixRTC events (MSC3401)
+  static const String CallMember = 'm.call.member';
+  static const String CallMemberLegacy = 'org.matrix.msc3401.call.member';
+  static const String CallNotify = 'm.call.notify';
+  static const String CallNotifyLegacy = 'org.matrix.msc4143.rtc.notify';
+
+  // Element Call specific events
+  static const String ElementCallEncryptionKeys =
+      'io.element.call.encryption_keys';
+  static const String ElementRageshake = 'io.element.rageshake';
+  static const String RageshakeRequest = 'org.matrix.rageshake_request';
+
+  // MSC3823 room types
+  static const String RoomType = 'org.matrix.msc3823.room_type';
 }
